@@ -21,7 +21,7 @@ spec:
         fsGroup: 1000
       containers:
       - name: parity
-        image: parity/polkadot:v0.9.12
+        image: polkadot
         command: ["polkadot"]
         args: ["--chain", "polkadot", "-d", "/data", "--rpc-external", "--ws-external"]
         securityContext:

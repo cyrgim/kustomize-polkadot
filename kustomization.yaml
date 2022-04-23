@@ -3,3 +3,7 @@ kind: Kustomization
 resources:
   - service.yaml
   - statefulset.yaml
+images:
+  - name: polkadot
+    newName: parity/polkadot:v0.9.19
+    digest: sha256:b6467af97a90b0f0ab29ac1657b41a8328f0974ac807231fdf371e4e458d4c6b
